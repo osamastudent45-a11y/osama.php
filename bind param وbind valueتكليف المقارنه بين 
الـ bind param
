@@ -12,8 +12,8 @@ $conn = new PDO("mysql:host=localhost;dbname=backend_db", "root", "");
 $sql = "INSERT INTO users (name, email) VALUES (:name, :email)";
 $stmt = $conn->prepare($sql);
 
-$stmt->bindValue(":name", "Mohammed");
-$stmt->bindValue(":email", "moh@test.com");
+$stmt->bindValue(":name", "osama");
+$stmt->bindValue(":email", "osa@test.com");
 
 $stmt->execute();
 ?>
