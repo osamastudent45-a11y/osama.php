@@ -1,0 +1,20 @@
+الاتصال بقاعده البيانات 
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "test_db";
+
+// إنشاء الاتصال
+$conn = mysqli_connect($host, $user, $pass, $db);
+
+// التحقق من الاتصال
+if (!$conn) {
+    die("فشل الاتصال بقاعدة البيانات: " . mysqli_connect_error());
+}
+
+echo "تم الاتصال بقاعدة البيانات بنجاح";
+?>
+ويتم استدعاءه في باقي الملفات 
+هاكذا 
+include 'db.php';
